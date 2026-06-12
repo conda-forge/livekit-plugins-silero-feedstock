@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.5.17
+  version: 1.6.0
 
 package:
   name: livekit-plugins-silero
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/l/livekit-plugins-silero/livekit_plugins_silero-${{ version }}.tar.gz
-    sha256: adbb4fd6cdd54d6f01d37b9d006351d9583ba24c5532e327ef2652fd884c900e
+    sha256: e9d7c99e5e7a3b1ea0012351fc3b03d690ed47ad90548329ffd232cc7812f7a7
   - url: https://raw.githubusercontent.com/livekit/agents/refs/tags/livekit-agents%40${{ version }}/LICENSE
     sha256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     file_name: LICENSE
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - livekit-agents >=1.5.17
+    - livekit-agents >=1.6.0
     - onnxruntime >=1.18
     - numpy >=1.26
 tests:
